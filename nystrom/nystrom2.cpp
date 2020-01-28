@@ -59,7 +59,7 @@ int main(){
   gsl_linalg_LU_decomp (matriz, p, &s);
   gsl_linalg_LU_solve (matriz, p, f, u);
 
-  for (int i = 0; i<N; i++) std::cout << "x = " << nos.at(i) << " \t u(x) = " <<  gsl_vector_get(u, i) << "  " << interpola(N, sigma, pesos, nos, u, nos.at(i)) << std::endl;
+  for (int i = 0; i<N; i++) std::cout << "x = " << nos.at(i) << " \t u(x) = " <<  gsl_vector_get(u, i) << std::endl;
 
 
   return 0;
